@@ -2506,8 +2506,8 @@ div.sheet-worn-items {
 /* Sheet display grid */
 
 div.sheet-inv-display-grid {
-	grid-template-columns: 4fr 1.5fr 1fr 0.5fr;
-	padding: 0.25em 0.5em;
+    grid-template-columns: 4fr 1.5fr 0.5fr 1fr 0.5fr;
+    padding: 0.25em 0em;
 }
 
 /* Configure header row */
@@ -3855,7 +3855,8 @@ div.sheet-options div.sheet-options-wrapper div.sheet-options-panel > * {
 	}
 
 	/* SHOW & HIDE NPC FREE ACTION OR REACTION */
-	span.sheet-actiontype input[value="0"] +  span {
+    span.sheet-actiontype input[value=""] + span,
+    span.sheet-actiontype input[value="0"] + span {
 		display: none;
 	}
 
